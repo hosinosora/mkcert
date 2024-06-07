@@ -145,6 +145,10 @@ To only install the local root CA into a subset of them, you can set the `TRUST_
 	-csr CSR
 	    Generate a certificate based on the supplied CSR. Conflicts with
 	    all other flags and arguments except -install and -cert-file.
+
+        -days INT
+		Generate a certificate valid for the specified number of days.
+		The default is 810, which is just under the macOS/iOS limit of 825.
 ```
 
 > **Note:** You _must_ place these options before the domain names list.
